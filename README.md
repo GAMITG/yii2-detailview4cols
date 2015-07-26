@@ -28,4 +28,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \gamitg\detailview4cols\AutoloadExample::widget(); ?>```
+<?= \gamitg\detailview4cols\AutoloadExample::widget(); ?>
+```
