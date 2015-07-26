@@ -1,0 +1,21 @@
+{
+    "name": "gamitg/yii2-detailview4cols",
+    "description": "This extension is a variation of the DetailView widget of Yii2. It has simply the same code with a few modification to it.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," detailview"," detailview4cols"," detailviewfourcolumns"," four column table"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "GAMITG",
+            "email": "gamitg@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "gamitg\\detailview4cols\\": ""
+        }
+    }
+}
