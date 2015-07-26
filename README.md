@@ -30,3 +30,5 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= \gamitg\detailview4cols\DetailView4Col::widget(); ?>
 ```
+
+TBD
