@@ -12,8 +12,57 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Inflector;
 
+
 /**
- * This is just an example.
+ * DetailView4Col class file.
+ *
+ * This class is same as DetailView class file with some addition\modification
+ * 
+ * To DetailView:
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * 
+ * To Reference DetailView4Col for Yii 1.x:
+ * @developer [c@cba](http://www.yiiframework.com/user/54420/)
+ * 
+ * DetailView4Col displays the details of a model in a 4-column table.
+ * By default two model attribues are displayed per row. 
+ * Model attributes that are explicitly specified as 'one-row' attributes
+ * will be displayed in one single row where the label spans one, and the value spans 3 columns.
+ * It is also possible to specify one or more 'header' rows, which span 4 columns 
+ * and may contain a header/description for the immediate rows underneath.
+ *
+ * DetailView4Col uses the {@link attributes} property to determines which model attributes
+ * should be displayed and how they should be formatted.
+ * 
+ * A typical usage of DetailView is as follows:
+ *
+ * ~~~
+ * echo DetailView4Col::widget([
+ *     'model' => $model,
+ *     'attributes' => [
+ *         'title',               // title attribute (in plain text)
+ *         'description:html',    // description attribute in HTML
+ *         [                      // the owner name of the model
+ *             'label' => 'Owner',
+ *             'value' => $model->owner->name,
+ *         ],
+ *	   [
+* *		'name'=>'Adresse',
+ *		'oneRow'=>true,
+ *		'type'=>'raw',
+ *		'value'=>$model->address.', '.$model->postal_code.' '.$model->city,
+ * 	   ],
+ * 	   'zipcodemaster.zipcode',
+ *         'created_at:datetime', // creation date formatted as datetime
+ *     ],
+ * ]);
+ * ~~~
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
  */
 class DetailView4Col extends Widget
 {
