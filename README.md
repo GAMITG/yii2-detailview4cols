@@ -37,21 +37,21 @@ Example
 ```php
 	<?= gamitg\detailview4cols\DetailView4Col::widget([
         'model' => $model,
-		    'options'=>['class'=>'table table-striped table-bordered detail-view'],
+        'options'=>['class'=>'table table-striped table-bordered detail-view'],
         'attributes' => [
-			      'id',
-			       [
-        				'attribute' => 'user_id',
-        				'value' => $model->user->user_name,
-        				'oneRow' =>true
-			      ],
-            'page_id',
-            'comment:ntext',
-            'time:datetime',
-            [
-				        'attribute'=>'created_by',
-				        'value'=>(!empty($model->user_id) ? $model->user_id : "Not Set")
-	    	    ],
+		'id',
+		[
+        		'attribute' => 'user_id',
+        		'value' => $model->user->user_name,
+        		'oneRow' =>true
+		],
+            	'page_id',
+            	'comment:ntext',
+            	'time:datetime',
+            	[
+		     	'attribute'=>'created_by',
+			'value'=>(!empty($model->user_id) ? $model->user_id : "Not Set")
+	    	],
         ],
     ]) ?>
 ```
