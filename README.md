@@ -35,7 +35,7 @@ Example
 -------
 
 ```php
-	<?= gamitg\detailview4cols\DetailView4Col::widget([
+	<?= \gamitg\detailview4cols\DetailView4Col::widget([
 		        'model' => $model,
 		        'options'=>['class'=>'table table-striped table-bordered detail-view'],
 		        'attributes' => [
