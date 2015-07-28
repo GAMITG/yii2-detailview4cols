@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "gamitg\\detailview4cols\\": ""
+            "gamitg\\detailview4cols\\": "*"
         }
     },
     "repositories":[
