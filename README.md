@@ -21,6 +21,17 @@ or add
 
 to the require section of your `composer.json` file.
 
+Note
+----
+If you getting while installing this extension, so just add following line in your `composer.json` file.
+
+```
+"minimum-stability": "dev",
+"prefer-stable": true,
+```
+
+Because of this extension currently available only in `dev-master`. So, i appreciate your suggestion and also issue fixing related to this extension.
+
 
 Usage
 -----
