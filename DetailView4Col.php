@@ -1,6 +1,6 @@
 <?php
 
-namespace gamitg\detailview4cols;
+namespace gamitg\detailview4cols\;
 
 use Yii;
 use yii\base\Arrayable;
