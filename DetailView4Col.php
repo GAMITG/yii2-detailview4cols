@@ -50,7 +50,7 @@ use yii\helpers\Inflector;
  *             'value' => $model->owner->name,
  *         ],
  *	   [
-* *		'name'=>'Adresse',
+* *		'attribute'=>'Adresse',
  *		'oneRow'=>true,
  *		'type'=>'raw',
  *		'value'=>$model->address.', '.$model->postal_code.' '.$model->city,
@@ -215,7 +215,7 @@ class DetailView4Col extends Widget
 					if(!preg_match('/^([\w\.]+)(:(\w*))?(:(.*))?$/',$attribute,$matches))
 						throw new InvalidConfigException(Yii::t('app','The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.'));
 					$attribute=array(
-						'name'=>$matches[1],
+						'attribute'=>$matches[1],
 						'format'=>isset($matches[3]) ? $matches[3] : 'text',
 					);
 				
@@ -232,12 +232,12 @@ class DetailView4Col extends Widget
 					
 				if(isset($attribute['label']))
 					$tr['{label}']= ($attribute['label']) ? $attribute['label'] : $this->model->getAttributeLabel($attribute['attribute']);
-				else if(isset($attribute['name']))
+				else if(isset($attribute['attribute']))
 				{
 					if($this->model instanceof Model)
-						$tr['{label}']=$this->model->getAttributeLabel($attribute['name']);
+						$tr['{label}']=$this->model->getAttributeLabel($attribute['attribute']);
 					else 
-						$tr['{label}']=ucwords(trim(strtolower(str_replace(array('-','_','.'),' ',preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $attribute['name'])))));
+						$tr['{label}']=ucwords(trim(strtolower(str_replace(array('-','_','.'),' ',preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $attribute['attribute'])))));
 				}
 				else if(isset($attribute['attribute']))
 					$tr['{label}']= $this->model->getAttributeLabel($attribute['attribute']);
@@ -246,8 +246,8 @@ class DetailView4Col extends Widget
 					$attribute['format']='text';
 				if(isset($attribute['value']))
 					$value=$attribute['value'];
-				else if(isset($attribute['name']))
-					$value=Html::getAttributeValue($this->model,$attribute['name']);
+				else if(isset($attribute['attribute']))
+					$value = ArrayHelper::getValue($this->model,$attribute['attribute']);
 				else
 					$value=null;
 
