@@ -95,7 +95,7 @@ class DetailView4Col extends Widget
 	 * <ul>
 	 * <li>label: the label associated with the attribute. If this is not specified, the following "name" element
 	 * will be used to generate an appropriate label.</li>
-	 * <li>attribute: the attribute. This can be either a property or a sub-property of the model.
+	 * <li>attribute: This can be either a property or a sub-property of the model.
 	 * If the below "value" element is specified, this will be ignored.</li>
 	 * <li>value: the value to be displayed. If this is not specified, the above "name" element will be used
 	 * to retrieve the corresponding attribute value for display. Note that this value will be formatted according
