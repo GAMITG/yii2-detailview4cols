@@ -77,10 +77,10 @@ class DetailView4Col extends Widget
 	 * @var array a list of attributes to be displayed in the detail view. Each array element
 	 * represents the specification for displaying one particular attribute.
 	 *
-	 * An attribute can be specified as a string in the format of "Name:Type:Label".
+	 * An attribute can be specified as a string in the format of "Attribute:Type:Label".
 	 * Both "Type" and "Label" are optional.
 	 *
-	 * "Name" refers to the attribute name. It can be either a property (e.g. "title") or a sub-property (e.g. "owner.username").
+	 * "Attribute" refers to the attribute. It can be either a property (e.g. "title") or a sub-property (e.g. "owner.username").
 	 *
 	 * "Label" represents the label for the attribute display. If it is not given, "Name" will be used to generate the appropriate label.
 	 *
@@ -95,7 +95,7 @@ class DetailView4Col extends Widget
 	 * <ul>
 	 * <li>label: the label associated with the attribute. If this is not specified, the following "name" element
 	 * will be used to generate an appropriate label.</li>
-	 * <li>name: the name of the attribute. This can be either a property or a sub-property of the model.
+	 * <li>attribute: the attribute. This can be either a property or a sub-property of the model.
 	 * If the below "value" element is specified, this will be ignored.</li>
 	 * <li>value: the value to be displayed. If this is not specified, the above "name" element will be used
 	 * to retrieve the corresponding attribute value for display. Note that this value will be formatted according
