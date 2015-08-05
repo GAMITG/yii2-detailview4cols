@@ -50,19 +50,19 @@ Example
 		        'model' => $model,
 		        'options'=>['class'=>'table table-striped table-bordered detail-view'],
 		        'attributes' => [
-				'id',
-				[
+					'id',
+					[
 		        		'attribute' => 'user_id',
 		        		'value' => $model->user->user_name,
 		        		'oneRow' =>true
-				],
-		            	'page_id',
-		            	'comment:ntext',
-		            	'time:datetime',
-		            	[
-				     	'attribute'=>'created_by',
-					'value'=>(!empty($model->user_id) ? $model->user_id : "Not Set")
-			    	],
+					],
+			        'page_id',
+			        'comment:ntext',
+			        'time:datetime',
+			        [
+					   	'attribute'=>'created_by',
+						'value'=>(!empty($model->user_id) ? $model->user_id : "Not Set")
+				    ],
 		        ],
     	]) ?>
 ```
