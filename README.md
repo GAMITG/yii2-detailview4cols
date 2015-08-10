@@ -2,6 +2,9 @@ DetailView4cols Extension for Yii2
 ==================================
 This extension is a variation of the DetailView widget of Yii2. It has simply the same code with a few modification to it.
 Thanks to "Yii 1.1: detailview4col (Developed by: [c@cba](http://www.yiiframework.com/user/54420/)) extension".
+
+[![Latest Stable Version](https://poser.pugx.org/gamitg/yii2-detailview4cols/v/stable)](https://packagist.org/packages/gamitg/yii2-detailview4cols) [![Total Downloads](https://poser.pugx.org/gamitg/yii2-detailview4cols/downloads)](https://packagist.org/packages/gamitg/yii2-detailview4cols) [![Latest Unstable Version](https://poser.pugx.org/gamitg/yii2-detailview4cols/v/unstable)](https://packagist.org/packages/gamitg/yii2-detailview4cols) [![License](https://poser.pugx.org/gamitg/yii2-detailview4cols/license)](https://packagist.org/packages/gamitg/yii2-detailview4cols)
+
 Installation
 ------------
 
