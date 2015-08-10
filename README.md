@@ -60,7 +60,7 @@ Example
 		        		'value' => $model->user->user_name,
 		        		'oneRow' =>true
 					],
-			        'page_id',
+			        'page.page_no',
 			        'comment:ntext',
 			        'time:datetime',
 			        [
