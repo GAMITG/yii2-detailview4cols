@@ -19,10 +19,4 @@
             "gamitg\\detailview4cols\\": ""
         }
     },
-    "repositories":[
-    {
-        "type": "git",
-        "url": "https://github.com/amit5992/yii2-detailview4cols"
-    }
-    ]
 }
