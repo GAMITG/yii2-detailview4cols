@@ -133,7 +133,7 @@ class DetailView4Col extends Widget
 	 * they will be assigned to the items sequentially and repeatedly.
 	 * Defaults to <code>array('odd', 'even')</code>.
 	 */
-	public $itemCssClass=array('odd','even');
+	public $itemCssClass = ['odd','even'];
 	/**
 	 * @var array the HTML options used for {@link tagName}
 	 */
