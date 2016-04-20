@@ -27,7 +27,7 @@ to the require section of your `composer.json` file.
 
 Note
 ----
-If you getting while installing this extension, so just add following line in your `composer.json` file.
+If you getting error while installing this extension, so just add following line in your `composer.json` file.
 
 ```
 "minimum-stability": "dev",
